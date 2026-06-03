@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: Miranda sans, sans-serif;
 }
+body{
+    background-color: #ececec;
+}
 
+/* /* AREA INICIO */
 .incio-landing-page {
     background-color: #2B2B2B;
     display: flex;
@@ -177,9 +181,11 @@
 }
 
 .area-kaua {
+
     display: flex;
     margin-left: 54.99vw;
-    background-color: #32462F;
+    background-image: url("src/scripts/img/img-localização-contato.png");
+    background-position: -140px;
     width: 45vw;
     margin-top: -64.6vh;
     height: 89.9vh;
@@ -194,6 +200,8 @@
     height: 70vh;
 
 }
+/* AREA SOBRE NOS  */
+
 .body-sn{
       background-image: url('src/scripts/img/fundoladingpage.png');
     background-size: cover;
@@ -221,6 +229,7 @@
     width: 6vw;
     height: 0.2vh;
 }
+/* AREA LOCALIZAÇÃO E CONTATOS */
 .corpo-localizacao-contato{
     display: flex;
 }
@@ -305,3 +314,95 @@
     margin-left: 2.4vw;
 
 }
+
+
+
+/* AREA SERVIÇOS #2B2B2B */
+
+.servico{
+     height: 35vh;
+    width: 100vw;
+    background-color:#161616; 
+    
+}
+
+.area-text-servico {
+    color: #fff;
+    font-size: 0.8vw;
+    margin-left: 3vw;
+    padding-top: 5vh;
+}
+
+   
+
+.area-servicos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2vw;
+  margin-top: -2vh;
+  
+}
+.card1{
+    display: flex;
+    align-items: center;
+    
+    background-color: #2B2B2B;
+    width:  23vw;
+    height: 20vh;
+    border-radius: 10px;
+    margin-top: 3vh;
+   
+}
+.card1 img {
+width: 5vw;
+
+margin-left: 1vw;
+}
+.card1 p{ color: #fff;
+font-weight: 600;
+;}
+.card1 span{
+  
+    font-weight: 600;
+    color: #128E1B
+}
+.area-barbearia {
+    display: flex;
+}
+.area-barbearia img{
+    
+    width: 25vw;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-left: 4vw;
+}
+.area-barbearia-img {
+    display: flex;
+    align-items: center;
+
+}
+.text-informativo-barbearia
+{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+    margin-top: -20vh;
+}
+.texto-informativo3{
+   display: flex;
+    align-items: center;
+    margin-top: 3vh;
+    color: #4B6A47;
+    font-size: 0.9vw;
+    font-weight: 600;  
+    
+}
+
+.line3{
+    background-color: #4B6A47;
+    width: 2vw;
+    height: 0.2vh;
+    margin-top: 1.5vw;
+}
+
