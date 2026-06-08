@@ -899,7 +899,6 @@ body {
         display: flex;
         width: 90%;
         margin-right: 3vw;
-
         bottom: -1px;
 
     }
@@ -928,9 +927,7 @@ body {
 
 }
 
-/* ==========================
-   RESPONSIVIDADE TABLET
-   ========================== */
+/*RESPONSIVIDADE TABLET*/
 
 @media (min-width:769px) and (max-width:1024px) {
 
