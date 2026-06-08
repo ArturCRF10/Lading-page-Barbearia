@@ -185,7 +185,7 @@ body {
 
     display: flex;
     margin-left: 54.99vw;
-    background-image: url("src/scripts/img/img-localização-contato.png");
+    background-image: url("src/img/img-localização-contato.png");
     background-position: -140px;
     width: 45vw;
     margin-top: -64.6vh;
@@ -206,7 +206,7 @@ body {
 
 
 .body-sn {
-    background-image: url("src/scripts/img/fundo-sombra.JPEG");
+    background-image: url("src/img/fundo-sombra.JPEG");
     background-repeat: no-repeat;
     overflow-x: hidden;
     background-position: center;
@@ -404,7 +404,7 @@ body {
 /* AREA LOCALIZAÇÃO E CONTATOS */
 
 .body-sn-localizacao {
-    background-image: url("src/scripts/img/fundoladingpage.png");
+    background-image: url("src/img/fundoladingpage.png");
 }
 
 .corpo-localizacao-contato {
@@ -922,7 +922,7 @@ body {
         margin-top: 3vh;
     }
     .body-sn{
-        background-image: url("src/scripts/img/fundo-sombra-cell.png");
+        background-image: url("src/img/fundo-sombra-cell.png");
     }
    
 
