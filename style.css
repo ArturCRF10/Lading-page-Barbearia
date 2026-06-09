@@ -181,15 +181,21 @@ body {
     width: 6vw;
 }
 
+.legendas-imgs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .area-kaua {
 
     display: flex;
-    margin-left: 54.99vw;
+    margin-left: 53.9vw;
     background-image: url("src/img/img-localização-contato.png");
     background-position: -140px;
     width: 45vw;
-    margin-top: -64.6vh;
-    height: 89.9vh;
+    margin-top: -64vh;
+    height: 90vh;
     border-bottom-left-radius: 28%;
     border-top-left-radius: 70%;
 
@@ -320,7 +326,7 @@ body {
 }
 
 .img-certificado img {
-    width: 25vw;
+    width: 15vw;
     border-radius: 15px;
     margin-left: 3vw;
     margin-top: 7vh;
@@ -353,7 +359,8 @@ body {
 .area-valores {
     background-color: #32462F;
     width: 100%;
-    margin-top: 7vh;
+    height: 28vh;
+    margin-top: 8vh;
 
 
 }
@@ -536,7 +543,7 @@ body {
 }
 
 .area-servicos .card1:hover {
-    border: #128E1B solid 0.5px;
+    border: #128E1B solid 2px;
     transform: translateY(-4px) scale(1.015);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0, 0.25);
 }
@@ -760,7 +767,7 @@ body {
         width: 100%;
         height: auto;
         margin: 30px 0 0 0;
-        background-position: center;
+        background-position: -75vw;
         border-radius: 0;
         justify-content: center;
 
@@ -917,15 +924,19 @@ body {
     .card p{
         width: 50vw;
     }
+    .area-valores{
+         height: 85vh;
+    }
     .area-valores p,h1.line21{
         margin-top: 3vh;
     }
     .body-sn{
         background-image: url("src/img/fundo-sombra-cell.png");
     }
+}
    
 
-}
+
 
 /*RESPONSIVIDADE TABLET*/
 
