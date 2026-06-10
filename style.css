@@ -181,7 +181,7 @@ body {
     width: 6vw;
 }
 
-.legendas-imgs{
+.legendas-imgs {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -381,25 +381,29 @@ body {
     color: #fff;
 }
 
-.valores{
+.valores {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
-.card{
+
+.card {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: justify;
     gap: 0.5VW;
 }
-.card span{
+
+.card span {
     color: #00A30A;
     font-weight: 600;
 }
-.card p{ color: #E8E8E8;
-   width: 15vw;
+
+.card p {
+    color: #E8E8E8;
+    width: 15vw;
 
 }
 
@@ -604,7 +608,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 3vh;
-    color: #4B6A47;
+    color: #73b16b;
     font-size: 0.9vw;
     font-weight: 600;
     margin-left: 10vw;
@@ -615,19 +619,26 @@ body {
 
 
 .text-ambiente {
-    color: #12480B;
+    color: #73b16b;
     width: 30vw;
     text-align: justify;
 }
 
 
+#prev {
+    display: none;
+}
+
+#next {
+    display: none;
+}
 
 .texto-resultados P {
     font-size: 1.5VW;
     margin-top: 4vh;
     margin-left: 6vw;
     font-weight: 600;
-    color: #128E1B
+    color: #51ac45
 }
 
 .imagens-resultados img {
@@ -834,7 +845,7 @@ body {
     .servico {
         height: auto;
         padding-bottom: 30px;
-      
+
     }
 
     .area-servicos {
@@ -891,17 +902,43 @@ body {
         margin: 20px 0;
     }
 
-    .imagens-resultados {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        gap: 5vw;
+    .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
 
-    }
+.container {
+    width: 300px;
+    overflow: hidden;
+}
 
-    .imagens-resultados img {
-        width: 90%;
-    }
+.track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.track img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#prev,
+#next {
+    display: flex;
+   background-color: transparent;
+   border: none;
+    cursor: pointer;
+    
+}
+
+#prev img {
+width: 40px;
+}
+#next img {width: 40px;}
 
     .toast {
         display: flex;
@@ -911,241 +948,365 @@ body {
 
     }
 
-    .area-kaua2{
+    .area-kaua2 {
         display: none;
     }
-    .area-kaua2 img{
+
+    .area-kaua2 img {
         display: none;
     }
-    .valores{
+
+    .valores {
         flex-direction: column;
         gap: 2vw;
         margin-top: 2vh;
     }
-    .card p{
+
+    .card p {
         width: 50vw;
     }
-    .area-valores{
-         height: 85vh;
+
+    .area-valores {
+        height: 85vh;
     }
-    .area-valores p,h1.line21{
+
+    .area-valores p,
+    h1.line21 {
         margin-top: 3vh;
     }
-    .body-sn{
+
+    .body-sn {
         background-image: url("src/img/fundo-sombra-cell.png");
     }
 }
-   
+
 
 
 
 /*RESPONSIVIDADE TABLET*/
 
-@media (min-width:769px) and (max-width:1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
-    /* HEADER */
+    /* NAVBAR */
+
+   
+    .incio-landing-page {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
 
     .logo img {
-        width: 14vw;
+        width: 90px;
     }
 
     .links-incio {
-        gap: 2vw;
-        font-size: 1.5vw;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    .links-incio a {
+        font-size: 13px;
     }
 
     .btn-agendar button {
-        width: 22vw;
-        font-size: 1.5vw;
+        width: 180px;
+        height: 45px;
+        font-size: 12px;
     }
 
     .btn-agendar img {
-        width: 2vw;
+        width: 20px;
     }
 
-    /* HERO */
+    /* HOME */
 
     .texto-informativo {
-        font-size: 1.5vw;
+        font-size: 14px;
     }
 
     .cada,
     .detalhe,
     .importa {
-        font-size: 6vw;
+        font-size: 55px;
     }
 
     .CTA-subtext p {
-        width: 40vw;
-        font-size: 2vw;
+        width: 45%;
+        font-size: 20px;
     }
 
     .icons-text img {
-        width: 8vw;
+        width: 70px;
     }
 
     .area-kaua {
-        width: 50vw;
-        margin-left: 50vw;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: auto;
         background-position: center;
+        border-radius: 25px;
     }
 
     .area-kaua img {
-        height: 60vh;
-        margin-left: 8vw;
+        width: 60%;
+        height: auto;
+        margin: auto;
+        display: block;
     }
 
-    /* SOBRE NÓS */
-
-    .texto-informativo-sn {
-        font-size: 1.5vw;
+    /* SOBRE */
+    .body-sn {
+        background-image: url("src/img/tela-tablet.png");
+       
     }
 
-    .parte1-text-princ {
-        font-size: 6vw;
-        width: 70vw;
+    .texto-principal-sn {
+  
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .texto-informativo-sn{
+        font-size: 2.5vw;
+    }
+    .nossa-historia{
+        font-size: 2.5vw;
+    }
+   .text-nossa-historia{font-size: 20vw;}
+   
+
+    .parte1-text-princ,
+    .parte2-text-princ {
+        width: 90%;
+        font-size: 50px;
+        margin-left: 30px;
     }
 
     .parte2-text-princ {
-        font-size: 6vw;
-        margin-left: -42vw;
+        margin-top: 0;
     }
 
     .subtext {
-        width: 50vw;
-        font-size: 1.8vw;
+        width: 90%;
+        margin-left: 30px;
+        font-size: 18px;
     }
 
     .area-kaua2 {
-        margin-left: 55vw;
-        margin-top: -25vw;
+        display: none;
+        margin: 40px auto;
+        justify-content: center;
+        gap: 30px;
     }
 
-    .area-kaua2 img {
-        width: 25vw;
     }
 
-    /* HISTÓRIA */
+    /* NOSSA HISTÓRIA */
+
+    .area-nossa-historia {
+        padding: 40px;
+        gap: 30px;
+    }
+    .nossa-historia span {
+       font-size: 200vw;
+    }
 
     .img-certificado img {
-        width: 35vw;
+        width: 40vw;
     }
 
     .text-nossa-historia {
-        width: 50vw;
-        font-size: 1.8vw;
-    }
-
-    .nossa-historia {
-        font-size: 1.4vw;
+        width: 100%;
+        font-size: 17px;
+        line-height: 1.7;
     }
 
     /* VALORES */
 
-    .titulo-valores p {
-        font-size: 1.6vw;
+    .area-valores {
+        height: auto;
+        padding: 40px 20px;
     }
 
-    .titulo-valores h1 {
-        font-size: 4vw;
+    .valores {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card {
+        width: 40%;
     }
 
     .card p {
-        width: 22vw;
-        font-size: 1.6vw;
-    }
-
-    .card img {
-        width: 5vw;
+        width: 100%;
+        text-align: center;
     }
 
     /* SERVIÇOS */
+@media (min-width: 769px) and (max-width: 1024px) {
 
     .servico {
         height: auto;
-        padding-bottom: 5vh;
+        padding: 40px 0 60px;
     }
 
     .area-text-servico {
-        font-size: 1.4vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .text-servico {
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
     }
 
     .area-servicos {
+        display: flex;
         flex-wrap: wrap;
-        gap: 2vw;
+        justify-content: center;
+        gap: 25px;
+        padding: 0 30px;
     }
 
     .card1 {
-        width: 45vw;
-        height: 18vh;
+        width: 320px;
+        min-height: 140px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 25px;
+        border-radius: 15px;
     }
 
     .card1 img {
-        width: 6vw;
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
     }
 
-    /* AMBIENTE */
+    .card1 p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .card1 span {
+        display: block;
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Ambiente da Barbearia */
+
+    .area-texto-ambient-barber {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 60px;
+        padding: 0 30px;
+    }
 
     .img-baber img {
-        width: 35vw;
+        width: 500px;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .name-SJ-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sj {
+        display: block;
+        margin: 0 0 15px;
+        font-size: 18px;
     }
 
     .text-ambiente {
-        width: 45vw;
-        font-size: 1.8vw;
+        width: 90%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: center;
     }
+}
 
     /* RESULTADOS */
 
-    .texto-resultados p {
-        font-size: 2.5vw;
+  .imagens-resultados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imagens-resultados img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.imagens-resultados img:hover {
+    transform: translateY(-8px);
+}
+    /* CONTATO */
+
+    .corpo-localizacao-contato {
+        justify-content: space-around;
+        padding: 30px;
     }
 
-    .imagens-resultados {
-        justify-content: center;
-        flex-wrap: wrap;
+    .mapa {
+        width: 350px;
         margin-left: 0;
     }
 
-    .imagens-resultados img {
-        width: 25vw;
-    }
-
-    /* LOCALIZAÇÃO */
-
-    .mapa {
-        width: 40vw;
-    }
-
-    .area-localizacao h1,
-    .area-contato h1 {
-        font-size: 2.5vw;
+    .area-localizacao h1 {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
     }
 
     .area-localizacao button {
-        width: 25vw;
+        width: 280px;
+        margin-left: 0;
     }
 
     .area-contato {
-        margin-left: 10vw;
-        margin-top: 20vh;
+        margin-left: 0;
+        margin-top: 80px;
+    }
+
+    .area-contato h1 {
+        font-size: 28px;
     }
 
     .area-contato button {
-        width: 25vw;
+        width: 280px;
+        margin-left: 0;
     }
 
     .area-contato img {
-        width: 2.5vw;
-    }
-
-    .icon-local {
-        width: 2.5vw;
+        width: 24px;
     }
 
     /* TOAST */
 
     .toast {
-        width: 45vw;
+        width: 4vw;
+        margin-left: -3vw;
+      margin-top: 15vh;
+        height: 60px;
+        margin-right: 20vw;
     }
-}

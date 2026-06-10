@@ -13,7 +13,7 @@
         <section class="logo">
             <img src="src/img/logo-barbearia.png" alt="logo">
         </section>
-       <div class="menu-toggle">
+        <div class="menu-toggle">
             ☰
         </div>
         <section class="links-incio">
@@ -28,7 +28,7 @@
         </section>
     </nav>
     <main class="parte-principal-sobre-nos">
-    
+
         <section class="texto-informativo-sn">
 
             <span>SOBRE NÓS</span>
@@ -44,9 +44,9 @@
                 experiência completa, unindo técnicas modernas, atendimento de qualidade e um ambiente pensado para o
                 seu conforto.</p>
         </section>
-         <section class="area-kaua2">
-                <img src="src/img/kaua-braços-cruzado.png" alt="">
-            </section>
+        <section class="area-kaua2">
+            <img src="src/img/kaua-braços-cruzado.png" alt="">
+        </section>
 
 
 
@@ -57,8 +57,9 @@
 
         <section class="area-nossa-historia">
             <section class="img-certificado">
-                <img src="src/img/img-certificado.jpeg" alt="Barbearia">
+                <img id="foto" src="src/img/img-certificado.jpeg" alt="Barbearia">
             </section>
+
             <section class="name-historia-text">
 
                 <span class="nossa-historia">NOSSA HITÓRIA</span>
@@ -70,7 +71,7 @@
                     dos meus pais, no dia 1 de novembro de 2024 abri pela primeira vez a minha barbearia e desde então
                     sigo firme sempre em busca da evolução.</p>
             </section>
-           
+
 
         </section>
         <section class="area-valores">
@@ -81,27 +82,39 @@
             </section>
             <section class="valores">
                 <section class="card">
-                <img src="src/img/user.png" alt="">
-                <span>RESPEITO</span>
-                <p>Valorizo cada cliente,com atenção, empatia e profissionalismo.</p>
+                    <img src="src/img/user.png" alt="">
+                    <span>RESPEITO</span>
+                    <p>Valorizo cada cliente,com atenção, empatia e profissionalismo.</p>
                 </section>
 
-                 <section class="card">
-                <img src="src/img/scissors.png" alt="">
-                <span>PAIXÃO</span>
-                <p> Sou apaixonado pelo que faço e isso se reflete em cada serviço.</p>
+                <section class="card">
+                    <img src="src/img/scissors.png" alt="">
+                    <span>PAIXÃO</span>
+                    <p> Sou apaixonado pelo que faço e isso se reflete em cada serviço.</p>
                 </section>
 
-                 <section class="card">
-                <img src="src/img/success.png" alt="">
-                <span>CONFIANÇA</span>
-                <p>Construo relações sólidas baseada em transparência e qualidade.</p>
+                <section class="card">
+                    <img src="src/img/success.png" alt="">
+                    <span>CONFIANÇA</span>
+                    <p>Construo relações sólidas baseada em transparência e qualidade.</p>
                 </section>
             </section>
-            
+
         </section>
     </main>
-<script src="src/img/scripts/index.js"></script>
+    <script src="src/img/scripts/index.js">const foto = document.getElementById("foto");
+
+        const imagens = [
+            "src/img/img-certificado.jpeg",
+            "src/img/kauã-inicio.jpeg"
+        ];
+
+        let indice = 0;
+
+        setInterval(() => {
+            indice = (indice + 1) % imagens.length;
+            foto.src = imagens[indice];
+        }, 6000);</script>
 
 </body>
 
