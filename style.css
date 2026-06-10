@@ -468,6 +468,7 @@ body {
 
 .area-contato {
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin-left: 20vw;
     margin-top: 30vh;
@@ -641,13 +642,13 @@ body {
     color: #51ac45
 }
 
-.imagens-resultados img {
+.track img {
     width: 15vw;
 
 
 }
 
-.imagens-resultados {
+.track {
     display: flex;
     gap: 2vw;
     margin-left: 9vw;
@@ -658,7 +659,7 @@ body {
 
 }
 
-.imagens-resultados :hover {
+.track :hover {
     transform: translateY(-4px) scale(1.015);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0, 0.25);
 }
@@ -872,19 +873,26 @@ body {
 
     .mapa {
         display: flex;
+        align-items: center;
         width: 90%;
         margin: 20px auto;
     }
 
     .area-localizacao button,
     .area-contato button {
-        width: 90%;
+       width: 20vw;
         margin: 20px auto;
     }
 
     .area-contato {
         margin: 30px 0;
         align-items: center;
+    }
+    .area-localizacao button{
+        width: 50vw;
+    }
+    .area-contato button{
+        width: 50vw;
     }
 
     .area-contato a {
@@ -920,8 +928,8 @@ body {
 }
 
 .track img {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -932,6 +940,7 @@ body {
    background-color: transparent;
    border: none;
     cursor: pointer;
+   
     
 }
 
@@ -942,7 +951,7 @@ width: 40px;
 
     .toast {
         display: flex;
-        width: 90%;
+        width: 80vw;
         margin-right: 3vw;
         bottom: -1px;
 
@@ -983,330 +992,6 @@ width: 40px;
 
 
 
-/*RESPONSIVIDADE TABLET*/
 
-@media (min-width: 769px) and (max-width: 1024px) {
 
-    /* NAVBAR */
 
-   
-    .incio-landing-page {
-        padding: 0 20px;
-        justify-content: space-between;
-    }
-
-    .logo img {
-        width: 90px;
-    }
-
-    .links-incio {
-        gap: 15px;
-        margin-left: 0;
-    }
-
-    .links-incio a {
-        font-size: 13px;
-    }
-
-    .btn-agendar button {
-        width: 180px;
-        height: 45px;
-        font-size: 12px;
-    }
-
-    .btn-agendar img {
-        width: 20px;
-    }
-
-    /* HOME */
-
-    .texto-informativo {
-        font-size: 14px;
-    }
-
-    .cada,
-    .detalhe,
-    .importa {
-        font-size: 55px;
-    }
-
-    .CTA-subtext p {
-        width: 45%;
-        font-size: 20px;
-    }
-
-    .icons-text img {
-        width: 70px;
-    }
-
-    .area-kaua {
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        height: auto;
-        background-position: center;
-        border-radius: 25px;
-    }
-
-    .area-kaua img {
-        width: 60%;
-        height: auto;
-        margin: auto;
-        display: block;
-    }
-
-    /* SOBRE */
-    .body-sn {
-        background-image: url("src/img/tela-tablet.png");
-       
-    }
-
-    .texto-principal-sn {
-  
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .texto-informativo-sn{
-        font-size: 2.5vw;
-    }
-    .nossa-historia{
-        font-size: 2.5vw;
-    }
-   .text-nossa-historia{font-size: 20vw;}
-   
-
-    .parte1-text-princ,
-    .parte2-text-princ {
-        width: 90%;
-        font-size: 50px;
-        margin-left: 30px;
-    }
-
-    .parte2-text-princ {
-        margin-top: 0;
-    }
-
-    .subtext {
-        width: 90%;
-        margin-left: 30px;
-        font-size: 18px;
-    }
-
-    .area-kaua2 {
-        display: none;
-        margin: 40px auto;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    }
-
-    /* NOSSA HISTÓRIA */
-
-    .area-nossa-historia {
-        padding: 40px;
-        gap: 30px;
-    }
-    .nossa-historia span {
-       font-size: 200vw;
-    }
-
-    .img-certificado img {
-        width: 40vw;
-    }
-
-    .text-nossa-historia {
-        width: 100%;
-        font-size: 17px;
-        line-height: 1.7;
-    }
-
-    /* VALORES */
-
-    .area-valores {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .valores {
-        flex-wrap: wrap;
-        gap: 25px;
-    }
-
-    .card {
-        width: 40%;
-    }
-
-    .card p {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* SERVIÇOS */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    .servico {
-        height: auto;
-        padding: 40px 0 60px;
-    }
-
-    .area-text-servico {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-
-    .text-servico {
-        margin: 0;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .area-servicos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
-        padding: 0 30px;
-    }
-
-    .card1 {
-        width: 320px;
-        min-height: 140px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 25px;
-        border-radius: 15px;
-    }
-
-    .card1 img {
-        width: 60px;
-        height: 60px;
-        flex-shrink: 0;
-    }
-
-    .card1 p {
-        font-size: 17px;
-        line-height: 1.5;
-        margin: 0;
-    }
-
-    .card1 span {
-        display: block;
-        margin-top: 5px;
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    /* Ambiente da Barbearia */
-
-    .area-texto-ambient-barber {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin-top: 60px;
-        padding: 0 30px;
-    }
-
-    .img-baber img {
-        width: 500px;
-        max-width: 100%;
-        border-radius: 15px;
-    }
-
-    .name-SJ-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .sj {
-        display: block;
-        margin: 0 0 15px;
-        font-size: 18px;
-    }
-
-    .text-ambiente {
-        width: 90%;
-        margin: auto;
-        font-size: 18px;
-        line-height: 1.8;
-        text-align: center;
-    }
-}
-
-    /* RESULTADOS */
-
-  .imagens-resultados {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.imagens-resultados img {
-    width: 220px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: all .3s ease;
-    cursor: pointer;
-}
-
-.imagens-resultados img:hover {
-    transform: translateY(-8px);
-}
-    /* CONTATO */
-
-    .corpo-localizacao-contato {
-        justify-content: space-around;
-        padding: 30px;
-    }
-
-    .mapa {
-        width: 350px;
-        margin-left: 0;
-    }
-
-    .area-localizacao h1 {
-        font-size: 28px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .area-localizacao button {
-        width: 280px;
-        margin-left: 0;
-    }
-
-    .area-contato {
-        margin-left: 0;
-        margin-top: 80px;
-    }
-
-    .area-contato h1 {
-        font-size: 28px;
-    }
-
-    .area-contato button {
-        width: 280px;
-        margin-left: 0;
-    }
-
-    .area-contato img {
-        width: 24px;
-    }
-
-    /* TOAST */
-
-    .toast {
-        width: 4vw;
-        margin-left: -3vw;
-      margin-top: 15vh;
-        height: 60px;
-        margin-right: 20vw;
-    }
